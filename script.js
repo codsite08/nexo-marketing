@@ -149,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const toastContainer = document.getElementById('toastContainer');
 
     const showToast = (message, type = 'success') => {
+        if (!toastContainer) return;
         const toast = document.createElement('div');
         toast.className = `toast ${type}`;
         toast.innerHTML = `<i class="fas fa-check-circle"></i> <span>${message}</span>`;

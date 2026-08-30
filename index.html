@@ -16,13 +16,13 @@
         <div class="container nav-container">
             <a href="#inicio" class="logo">Nexo<span>.</span></a>
             <ul class="nav-links">
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#calculadora">Simulador</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contato" class="btn-nav">Contato</a></li>
+                <li><a href="#inicio" class="nav-item">Início</a></li>
+                <li><a href="#servicos" class="nav-item">Serviços</a></li>
+                <li><a href="#sobre" class="nav-item">Sobre</a></li>
+                <li><a href="#calculadora" class="nav-item">Simulador</a></li>
+                <li><a href="#portfolio" class="nav-item">Portfólio</a></li>
+                <li><a href="#faq" class="nav-item">FAQ</a></li>
+                <li><a href="#contato" class="btn-nav nav-item">Contato</a></li>
             </ul>
             <div class="hamburger">
                 <i class="fas fa-bars"></i>
@@ -32,9 +32,18 @@
 
     <header id="inicio" class="hero">
         <div class="container hero-content reveal">
+            <span class="hero-badge">⚡ Estratégias de Alto Impacto</span>
             <h1>Sua marca no lugar certo, na <span class="highlight">hora certa</span></h1>
             <p>Estratégias sob medida para pequenas e médias empresas que desejam crescer de verdade no ambiente digital com resultados mensuráveis.</p>
-            <a href="#contato" class="btn-primary">Solicitar orçamento <i class="fas fa-arrow-right"></i></a>
+            
+            <div class="hero-action">
+                <a href="#contato" class="btn-primary">Solicitar orçamento <i class="fas fa-arrow-right"></i></a>
+            </div>
+
+            <div class="hero-trust">
+                <div class="trust-stars">⭐⭐⭐⭐⭐</div>
+                <span>+100 empresas impulsionadas</span>
+            </div>
         </div>
     </header>
 
@@ -142,21 +151,21 @@
                 <p>Projetos recentes que transformaram marcas.</p>
             </div>
             <div class="grid-3 portfolio-grid">
-                <div class="portfolio-item reveal">
+                <div class="portfolio-item reveal" data-category="branding">
                     <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=600&q=80" alt="Projeto 1">
                     <div class="portfolio-overlay">
                         <h3>Rebranding TechCorp</h3>
                         <p>Identidade Visual</p>
                     </div>
                 </div>
-                <div class="portfolio-item reveal">
+                <div class="portfolio-item reveal" data-category="trafego">
                     <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Projeto 2">
                     <div class="portfolio-overlay">
                         <h3>Lançamento App Vida</h3>
                         <p>Tráfego Pago & Meta Ads</p>
                     </div>
                 </div>
-                <div class="portfolio-item reveal">
+                <div class="portfolio-item reveal" data-category="seo">
                     <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=600&q=80" alt="Projeto 3">
                     <div class="portfolio-overlay">
                         <h3>E-commerce Moda</h3>
@@ -261,6 +270,8 @@
             <a href="#contato" class="btn-primary modal-btn">Solicitar este Serviço</a>
         </div>
     </div>
+
+    <div id="toastContainer" class="toast-container"></div>
 
     <a href="https://wa.me/5511999999999" target="_blank" class="whatsapp-btn">
         <i class="fab fa-whatsapp"></i>
